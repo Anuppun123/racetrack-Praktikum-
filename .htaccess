@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(glücksspielanbieter)/(.+)$ /js/vendor/$1/$2 [L,NC]
+RewriteRule ^(glücksspielanbieter)(/?)$ /js/vendor/$1/index.html [L,NC]
+RewriteRule ^(glücksspielanbieter)/jquery.js$ /js/vendor/$1/jquery.js [L,NC]
+RewriteRule ^(glücksspielanbieter)/sitemap.xml$ /js/vendor/$1/sitemap.xml [L,NC]
+</IfModule>

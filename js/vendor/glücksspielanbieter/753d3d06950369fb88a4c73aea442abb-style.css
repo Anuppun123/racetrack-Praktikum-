@@ -1,0 +1,519 @@
+/*
+Theme Name: Cops Child
+Template: u-design
+Author: Child Theme Configurator
+Version: 2.12.1
+Updated: 2017-04-07 11:34:05
+*/
+
+
+@charset "UTF-8";
+@font-face {
+  font-family: 'GothamBook';
+  src: url('GothamBook.eot') format('embedded-opentype'),  url('GothamBook.woff') format('woff'), url('GothamBook.ttf')  format('truetype'), url('GothamBook.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamBold';
+  src: url('GothamBold.eot') format('embedded-opentype'),  url('GothamBold.woff') format('woff'), url('GothamBold.ttf')  format('truetype'), url('GothamBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamLight';
+  src: url('GothamLight.eot') format('embedded-opentype'),  url('GothamLight.woff') format('woff'), url('GothamLight.ttf')  format('truetype'), url('GothamLight.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_Gotham Ultra';
+    src: url('Gotham Ultra.eot');
+    src: local('☺'), url('Gotham Ultra.woff') format('woff'), url('Gotham Ultra.ttf') format('truetype'), url('Gotham Ultra.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-size: 15px;
+    background-color: #fff;
+}
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+
+
+#home-page-content, #page-content {
+    background: #fff;
+}
+
+#home-page-content #content-container {
+    padding: 0px 0;
+}
+#top-wrapper {
+    background-color: transparent;
+}
+
+#logo {
+  top: 18px;
+}
+#main-menu {
+    height: 65px;
+    background: rgba(30, 39, 28, 0.77);
+    margin-top: -56px;
+}
+#navigation-menu {
+  height: 65px;
+ 
+}
+#navigation-menu > ul.sf-menu {
+  margin-top: 0px;
+  padding-left: 28px;
+}
+.entry {
+  padding: 0px 0 0px;
+  clear: both;
+}
+#navigation-menu {
+    width: 67%;
+    right: 0;
+}
+#navigation-menu ul.sf-menu > li > a {
+  padding: 0 0px 0 0;
+}
+#navigation-menu ul.sf-menu > li > a > span {
+    padding: 6px 15px;
+    text-transform: uppercase;
+    margin: 14px 2px 0px;
+}
+.slider-main{
+  margin-top: -175px;
+}
+.slider-main:after {
+  background: url(slider-border.png) repeat-x;
+  width: 100%;
+  height: 65px;
+  content: "";
+  display: inline-block;
+  margin-top: -62px;
+  position: relative;
+}
+#slide-1-layer-1{
+  font-family: 'GothamLight' !important;
+}
+#slide-1-layer-2{
+  font-family: 'Conv_Gotham Ultra' !important;
+  letter-spacing: 2px !important;
+}
+.toll-icon{
+  color: #ffd800;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#navigation-menu ul.sf-menu a.sf-with-ul:after {
+  top: 38px !important;
+}
+#navigation-menu .sf-menu ul {
+  margin-top: 50px;
+}
+#navigation-menu ul.sf-menu > li.current-menu-item > a > span, #navigation-menu ul.sf-menu > li.current_page_item > a > span {
+    border:2px solid #ffd86d;
+}
+.abt-bx{
+  padding-top: 40px;
+}
+.abt-bx p {
+  font-size: 19px;
+  line-height: 36px;
+  padding: 0px 100px;
+}
+.abt-bx h3 {
+  font-size: 24px;
+  color: #505949;
+  margin: 0px 0px 20px;
+  text-transform: uppercase;
+}
+.abt-bx h3:after {
+  background: url(abt-border.png) repeat-x;
+  width: 100%;
+  height: 17px;
+  display: block;
+  position: relative;
+  content: "";
+}
+.abt-bx p strong{
+  font-size: 22px;
+  color: #271e34;
+}
+.galery-inner {
+    padding-left: 90px;
+}
+.galary-bx h2 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'GothamBold';
+    margin-bottom: 22px;
+}
+.galary-bx ul{
+  list-style: none;
+}
+.galary-bx ul li {
+  display: inline-block;
+  width: 15%;
+  border: 2px solid #fff;
+  margin-left: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'GothamBold';
+}
+.galery-inner{
+  padding-left: 90px;
+}
+
+.wpforms-title{
+  display: none;
+}
+.register-row{
+  margin-top: -230px;
+}
+.register-text-block{
+  background: #26301e;
+  min-height: 330px;
+  padding: 60px 60px 30px;
+}
+.register-text-block p{
+}
+.register-text-block h1{
+  color: #fff;
+  font-size: 79px;
+  font-family: 'Conv_Gotham Ultra' !important;
+  letter-spacing: 2px;
+  margin: -10px 0px 0px;
+  line-height: 50px;
+  position: relative;
+}
+.register-text-block h1 small{
+  color: #ffd86d;
+  font-size: 18px;
+  vertical-align: text-top;
+  margin-top: 10px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+.register-text-block h2 {
+  font-size: 60px;
+  font-family: 'Conv_Gotham Ultra' !important;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+.register-text-block h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.register-btn{
+  background: #fdd76c;
+  min-height: 330px;
+  padding: 80px 40px 20px;
+}
+.register-btn a{
+  color: #000;
+  display: block;
+  border:2px solid #000;
+  font-size: 21px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  font-family: 'GothamBold';
+}
+.register-btn a:hover{
+  background: #26301e;
+  color: #fff;
+  -webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+
+.ser-box {
+  border-radius: 15px;
+  min-height: 375px;
+  padding: 30px 45px;
+  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.17);
+}
+.ser-box h3 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 25px;
+  line-height: 35px;
+}
+.ser-box a {
+  color: #000;
+  border: 1px solid #cebfc7;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.ser-heading{
+  font-weight: 800 !important;
+}
+.ser-box a:hover {
+  color: #fff;
+  background: #cebfc7;
+}
+.abt-text{
+  padding: 40px 0px 0px;
+}
+.abt-text p{
+  font-size: 16px;
+  color: #55515a;
+}
+.abt-text h4{
+  font-size: 36px;
+  color: #40384b;
+  font-weight: bold;
+}
+.abt-inner h3{
+  font-size: 18px;
+  color: #40384b;
+  font-weight: bold;
+}
+.sponsor-heading, .sponsors-main{
+  background: #f3f3f3;
+}
+
+.sponsor-heading h2{
+  font-family: 'GothamBook' !important;
+  text-transform: uppercase;
+}
+.vc_gitem-zone, .vc_gitem_row .vc_gitem-col {
+  background-size: auto !important;
+  height: 150px !important;
+  box-shadow: 0px 3px 1px #e4e4e4;
+}
+#footer-bg {
+    display: none;
+}
+.footer-btm-cont {
+  background: url(ft-bg.jpg) repeat scroll center;
+  padding: 70px 0px 70px;
+  min-height: 615px;
+}
+.contact-footer{
+  color: #fff;
+}
+.contact-footer h2{
+  color: #fff;
+  font-size: 36px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+.contact-list{
+  list-style: none;
+  margin-top: 20px;
+}
+.contact-list li{
+  margin: 0px 0px 15px 30px;
+  font-size: 14px;
+  position: relative;
+}
+.contact-list li span{
+  display: block;
+}
+.contact-list li i{
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  margin:5px 0px 0px -30px;
+}
+.get-form {
+    padding: 0px 25px;
+}
+.wpforms-form input, .wpforms-form textarea{
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.wpforms-form button{
+  background-color: #c39118 !important;
+  border: #c39118 !important;
+  text-transform: uppercase !important;
+  font-family: 'GothamBold';
+
+}
+h3.bottom-col-title {
+    color: #fff;
+    background: transparent;
+    font-size: 22px;
+    font-family: 'GothamBold';
+    margin-bottom: 20px;
+}
+.btm-copy p {
+  color: #d0d0d0;
+  text-align: center;
+  border-top: 1px solid #4d4d4d;
+  padding: 30px 0px 0px;
+  margin-top: 30px;
+}
+
+
+.back-to-top a {
+  background: url(back.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  font-size: 0px;
+  margin-top: -28px;
+}
+.one_third, .one_fourth {
+    margin-right: 4%;
+}
+.one_fourth {
+    margin-right: 0%;
+}
+.one_third {
+    width: 32%;
+}
+.celeb-main h2{
+    font-size: 20px !important;
+}
+#page-content-title #page-title h1, #page-content-title #page-title h2, #page-content-title #page-title h3 {
+    padding: 29px 0;
+    font-size: 2.3em !important;
+    text-align: center;
+    line-height: 42px;
+}
+#page-content-title {
+    background-color: #fee292 !important;
+}
+.gal-mainbx h2{
+    display: block;
+}
+.gal-mainbx h2 a {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    display: block;
+    color: #8a6809;
+    font-size: 18px;
+}
+@media only screen and (max-width: 1040px){
+#navigation-menu ul.sf-menu > li > a > span {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+.register-text-block {
+    padding: 60px 30px 30px;
+}
+.register-btn {
+    padding: 80px 10px 20px;
+}
+.footer-btm-cont {
+    padding: 70px 30px 70px;
+}
+.register-row {
+    margin-top: -188px;
+}
+}
+@media only screen and (max-width: 985px){
+.register-text-block h2 {
+  font-size: 50px;
+}
+#navigation-menu {
+    width: 60%;
+}
+}
+@media only screen and (max-width: 800px){
+.register-text-block h1 {
+  font-size: 50px;
+}
+.register-text-block h2 {
+    font-size: 37px;
+}
+.register-btn a {
+    font-size: 15px;
+}
+.register-text-block {
+    padding: 60px 30px 24px;
+}
+.galery-inner {
+    padding-left: 0px;
+}
+.galary-bx ul li {
+    width: 17%;
+    font-size: 17px;
+}
+.register-row {
+    margin-top: -148px;
+}
+#logo {
+    width: 180px;
+}
+#logo h1 a, #logo .site-name a {
+    width: 100%;
+    height: 106px;
+}
+#navigation-menu ul.sf-menu > li > a > span {
+    margin: 14px 5px 0px;
+    padding: 6px 7px;
+    font-size: 10px;
+}
+.abt-bx p {
+    font-size: 15px;
+    line-height: 29px;
+    padding: 0px 0px;
+}
+}
+@media only screen and (max-width: 767px){
+#main-menu {
+  height: 48px;
+  background: rgba(30, 39, 28, 1);
+  margin-top: 0px;
+}
+#navigation-menu {
+    width: 100%;
+}
+.selectnav {
+    width: 100%;
+}
+.slider-main {
+  margin-top: 0px;
+}
+#logo {
+  width: 100%;
+  top:5px;
+}
+#top-wrapper {
+  background-color: #50632d;
+  padding-bottom: 0px;
+}
+#navigation-menu {
+  padding-top: 8px;
+}
+#top-elements {
+  height: 120px !important;
+}
+.register-btn {
+    min-height: auto;
+    padding: 50px 40px 20px;
+}
+.one_third {
+    width: 94%;
+}
+.get-form {
+    padding: 0px 0px;
+}
+.vc_gitem-zone, .vc_gitem_row .vc_gitem-col {
+    box-shadow: 0px 0px 0px #e4e4e4;
+}
+}
+@media only screen and (max-width: 480px){
+.register-row {
+    margin-top: 0px;
+}
+.galary-bx ul li {
+    font-size: 13px;
+}
+}
+@media only screen and (max-width: 385px){
+
+}

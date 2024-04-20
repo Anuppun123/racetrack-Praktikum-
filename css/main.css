@@ -1,0 +1,994 @@
+/*! HTML5 Bolerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+::-moz-selection {
+    background: #666666;
+    text-shadow: none;
+}
+
+/* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
+::selection {
+    background: #666666;
+    text-shadow: none;
+}
+
+/* hr is the seperation line between the two divs. */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 3em 0 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+/* 
+The <fieldset> HTML element is used to group several controls as well as labels (<label>) within a web form. */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: rgba(19, 2, 2, 0.959);
+    padding: 0.2em 0;
+}
+
+td {padding:0.5em 0;line-height:1.25em;}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v16-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+       url('../fonts/open-sans-v16-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v16-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('../fonts/open-sans-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-700italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v16-latin-700italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+       url('../fonts/open-sans-v16-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-700italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font:15px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial, sans serif;
+	background:hsl(0, 5%, 4%);
+}
+
+.wrapper {
+    width: 94%;
+    margin: 0 3%;
+	background:url(../img/rtc-back.png) no-repeat;
+	background-position:100px 17%;
+}
+.column .par1 {
+    column-width: 500px;
+  }
+
+
+/* ===================
+    ALL: RaceTrack Coach Theme
+   =================== */
+
+header {margin:0 auto; display:block;background-color:#000000;}
+
+.logo {
+   padding:1em 5% 0 5%;
+   text-align:center;
+     }
+	 
+.logo img { 
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 0%;
+  max-width:700px;
+  transition: all 1s ease;
+ }
+
+.footer-container {
+	padding-bottom:1.5em;
+	background: #1b1b1b;
+}
+
+.was-ist-rtc {	
+	background:url(../img/rtc-back.png) center no-repeat;
+}
+
+.rennfahrer-entwicklungsprogramm {
+	clear:both;
+	background-color:#5ac8fb}
+
+#footer-01 {
+   float: left;
+   margin-right:10%;
+   margin-top:0;
+}
+
+#footer-01 ul{
+   margin-top:-0.2em;
+   margin-left:-3em;
+}
+
+#footer-02 {
+   float: left;
+   margin-right:7%;
+   margin-bottom:1.5em;
+}
+
+#footer-02 ul {
+   margin:0;
+   padding:0;
+}
+
+#footer-02 a {
+   margin:0;
+   padding:0;
+}
+ 
+#footer-03 {
+   float: left;
+ }
+
+#footer-clear {
+   clear: both;
+   font-size:80%;
+ }
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+	float:right;
+	margin: 0.5em 2% 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a, nav a:visited  {
+    display: inline;
+    margin:0;
+    padding: 0.25em 0.6em;
+    text-decoration: none;
+    font-weight: bold;
+    color:#5ac8fb;
+}
+
+nav a:hover{
+    color: #f5f5f5;
+	text-decoration: none;
+	background: #aaaaaa;
+}
+
+nav a:active,
+nav a:focus {
+    text-decoration: none;
+	background: #5ac8fb;
+	color:#ffffff;
+}
+
+.nav-no-link a {
+    text-decoration: none;
+	color:#ffffff !important;
+	cursor:default;
+}
+
+.nav-no-link a:hover, .nav-no-link a:focus, .nav-no-link a:active {
+    background: none;
+}
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 1px 0 2em 0;
+}
+
+.main a {
+    color:#5ac8fb;
+	position:relative;
+	z-index:990;
+	font-weight:700;
+	text-decoration:none;
+}
+
+.main a:hover {
+    color:#8bd7fb;
+}
+
+.main article h1 {
+   	margin:1em 0 0.25em 0;
+}
+
+.main aside {
+    color:#FFFFFF;
+    -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.aside-top2 {border: #5ac8fb thin solid;text-align:center;}
+
+.app-button a:hover{
+	border: 0 0 30px #5ac8fb;
+	-webkit-box-shadow: 0 0 30px #5ac8fb;
+	box-shadow: 0 0 30px #5ac8fb;
+}
+
+.main aside h1 {
+    font-size: 1.6em;
+	text-align:center;
+	margin:1.5em 1% 1em 0;;
+}
+
+.aside-qualitaet {
+	background:transparent !important;
+	color:#5ac8fb !important;;
+	padding: 0px 2% 10px;
+}
+
+.article-gallery {
+        float: left;
+        width: 103% !important;
+		margin-top:1em;
+		margin:0 0 0 0;
+    }
+
+.footer-container footer {
+    color: #f5f5f5;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1 {
+	color:#ffffff;
+	font-family: 'Open Sans', Arial, Helvetica, sans serif;
+	font-weight:400;margin-bottom:0;
+	font-size: 1.5em;
+	font-style:italic;
+}
+
+h2 {
+	color:#5ac8fb;
+	font-family:'Open Sans',Arial, Helvetica, sans serif;
+	font-size:1.5em;
+	padding:0;margin:0 0 1em 0;
+	font-style:italic;
+}
+
+.h2-color-weight {color:#ffffff;font-family:'Open Sans',Arial, Helvetica, sans serif;font-weight:lighter;padding:0;margin:0;}
+
+h3 {color:#cccccc;font-family:'Open Sans',Arial, Helvetica, sans serif;line-height:1.35em;clear:both;margin:1.5em 0 0 0;font-size:2em}
+
+h4 {
+	color:#ffffff;
+	font-family: 'Open Sans', Arial, Helvetica, sans serif;
+	font-weight:700;margin-bottom:0;
+	font-size: 1.6em;
+	font-style:italic;
+}
+
+h5 {color:#5ac8fb;text-align:center;font-size:1.9em;padding:0;margin:2em 0 0 0;}
+
+
+.button {display:block;margin:2em 0;clear:both;}
+.button a{
+	color:#5ac8fb;
+	background-color:#5ac8fb;
+	text-decoration:none;
+	padding:0.75em 1em;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.footer-container a {
+	color:#f5f5f5;
+	text-decoration:none;
+	padding:0.5em;
+}
+
+.footer-container a:hover {
+	color:#5ac8fb;
+}
+
+.footer-container ul{
+	list-style-type:none;
+}
+
+.footer-container li{
+	line-height:2.0em;
+}
+
+#footer-01 {margin-top:0.9em;}
+
+.initial{
+    color: white;
+}
+
+
+.initial:first-of-type:first-letter {
+  font-family: 'Open Sans', Arial, Helvetica, sans serif;
+  font-size: 5em;
+  font-weight:700;
+  line-height: .8em;
+  display: block;
+  margin: 5px 5px 0 0px;
+  float: left;
+  padding: 3px 5px 0 2px;
+  color: #5ac8fb;
+}
+
+.initial-2{
+    color: white;
+}
+
+.initial-2:first-of-type:first-letter {
+  font-family: 'Open Sans', Arial, Helvetica, sans serif;
+  font-size: 3.5em;
+  font-weight:700;
+  line-height: .8em;
+  display: block;
+  margin: 5px 3px 0 0px;
+  float: left;
+  padding: 3px 3px 0 2px;
+  color: #ffffff;
+}
+
+
+.display-schreenshots {
+	width: 100%;
+	height: auto;
+	padding:2em 0;
+	max-width:461px;
+  }
+  
+.app-store {
+	font-size:1.1em;
+	font-style:italic;
+	color:#5ac8fb;
+	font-weight:bold;
+	line-height:1.4em;
+}
+.rennfahrer-programm-link {
+	display:inline-block;
+	font-size:1.25em;
+	font-style:italic;
+	color:#5ac8fb;
+	font-weight:bold;
+	line-height:1.4em;
+	margin:2.5em 0 0.75em 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-container-wrapper {
+max-width: 100%;
+width: 720px;
+left: 0;
+right:0;
+margin:auto;
+padding: 2.5em 0 4em 0;
+}
+   .rennfahrer-programm-box {
+		background-color:#5ac8fb;
+		padding:0 1.5em 1em 1.5em;
+		border-radius:4px;
+	}
+	
+	.rennfahrer-programm-box h4 {
+		padding:0.9em 0 0.4em 0;
+		font-size:1.5em;
+	}
+	
+	.rennfahrer-programm-box-left {
+		display:inline-block;
+	}
+	
+	.rennfahrer-programm-box-right {
+		display:inline-block;
+	}
+
+	.rtc-logo {
+	display:none;}  
+  
+	.rennwagen {
+		width: 100%;
+		height: auto;
+		max-width:500px;
+		border-radius:4px;
+	}
+    .sim-racing-wrapper {
+       background-color: red;
+    }
+    .sim-racing-wrapper p {
+        text-align:right;
+        padding-left: 10em;
+        text-shadow: sandybrown;
+    }
+  
+  .kontakt-anfrage-wrapper {
+	text-align:center;
+	padding-top:1em;
+	}
+	
+	.kontakt-anfrage-wrapper a:hover{
+	border: 0 0 10px #ddd;
+	-webkit-box-shadow: 0 0 10px #ddd;
+	box-shadow: 0 0 10px #ddd;
+	}
+  
+	.kontakt-anfrage-btn {
+		display:inline-block;
+		color:#ffffff !important;
+		margin:1em 0 2em 0;
+		padding:0.5em 0.75em;
+		border:rgba(255,255,255,1) thin solid;
+		border-radius:4px;
+		font-size:1.3em;
+	}
+    
+    
+  
+	.kontakt {
+		text-align:center;
+	}
+
+    .kontakt p{
+        color: white;
+    }
+
+	.agb-link {
+		font-size:1.25em;
+		font-style:italic;
+		color:#5ac8fb;
+		font-weight:bold;
+		line-height:1.4em;
+		padding-top:1em;
+	}
+    
+	
+	.agb-liste-0 li{
+		list-style:none;
+		margin-top:1em;
+}
+	
+	.agb-liste li{
+		text-indent: -1.9em;
+		list-style:none;
+		margin-top:1em;
+}
+
+.agb-liste-2 li{
+		text-indent: -2em;
+		list-style:none;
+		margin-top:1em;
+}
+.agb-liste-3 li{
+		text-indent: -2.5em;
+		list-style:none;
+		margin-top:1em;
+}
+  
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    
+
+    .assetto_card{
+        padding-top: 20px;
+        position:relative;
+      }
+      /* .card{
+        padding-bottom: 100px;
+    } */
+.logo {
+   width:auto;
+   font-size:100%;
+}
+
+.claim {
+	display:inline-block;
+	vertical-align:top;
+}
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+nav a {
+    width:41.5%;
+}
+
+
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+}
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+.display-schreenshots-wrapper {
+	text-align: center;
+}
+}
+
+@media only screen and (min-width: 768px) {
+	
+.wrapper-head {
+	width:100% !important;
+}
+.assetto_card{
+    padding-top: 200px;
+    position: relative;
+  }
+ 
+
+header {margin-bottom:10em;background:#000000;}
+
+.header-inner {
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1em;
+}
+
+.shrink-img{
+   width:25%!important;
+   position: relative;
+   left: -10%!important;
+   transition: all 1s ease;
+}
+
+.sticky { 
+	margin-left:auto 0;
+	margin-right:auto 0;
+	left:0;
+	right:0;
+	border-bottom:#444444 thin solid;
+	padding:0.2em 0;
+	position:fixed;
+    width:1026px;
+    margin-bottom: 0px;
+	z-index:1010 !important;
+}
+
+.offset:before { 
+  display: block; 
+  content: " "; 
+  height: 140px;      /* Give height of your fixed element */
+  margin-top:-1px; /* Give negative margin of your fixed element */  visibility: hidden;
+}
+
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+/*.header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+nav {text-align: center;}
+
+nav ul {margin:-1.75em 0 0 485px;z-index:1000;position:relative;float:none;padding-bottom:0;}
+
+nav li:first-child a {
+        margin-left: 0em;
+}
+
+nav li:last-child a {
+}
+
+/* ============
+    WIDE: Main
+   ============ */
+
+.main {
+    padding: 30px 0 2em 0;
+}
+    .main article {
+        float: left;
+        width: 65%;
+	}
+	
+	.article-top, .article-top2 {
+        float: left;
+        width: 45% !important;
+		padding-right:7%;
+		clear:both;
+    }
+	
+	.article-qualitaet {
+        float: left;
+        width: 65% !important;
+    }
+	
+	.article-leistungen {
+        float: left;
+        width: 100% !important;
+		margin-top:1em;
+    }
+	
+	.article-gallery {
+        width: 100.9% !important;
+    }
+
+    .main aside {
+        float: right;
+		border:none;
+		color:#FFFFFF;}
+	
+	.aside-top {
+        float: right;
+        width: 40% !important;
+    }
+	
+	.aside-top2 {
+        float: right;
+        width: 40% !important;
+		border:none;
+		text-align:left;
+    }
+	
+	.aside-qualitaet {
+	   float: right;
+	   width: 25% !important;
+	   color: #5ac8fb!important;
+}
+
+#footer-01 img{display:inline-block;}
+
+
+h1 {
+	font-size: 2.3em;
+}
+
+h2 {
+	font-size:2.5em;
+	margin-top:0.5em;
+}
+
+.rtc-logo-schreenshots {
+	margin-top:-4em;
+}
+
+.display-schreenshots {
+	width: 100%;
+	height: auto;
+	padding:2em 0;
+	margin-top:-8em;
+  }
+
+.video-container-wrapper {
+	padding: 2.5em 0 6em 0;
+}
+
+
+
+.rennfahrer-programm-box {
+		background:#5ac8fb url(../img/background-blue-box.jpg) no-repeat;
+}
+
+	.rennfahrer-programm-box h4 {
+		padding:0.9em 0 0.4em 0;
+		font-size:1.5em;
+		display:inline-block;
+		vertical-align:top;
+	}
+
+	.rennfahrer-programm-box-left {
+		clear:both;
+		display:inline-block;
+		width:45%;
+		vertical-align:top;
+	}
+	
+	.rennfahrer-programm-box-right {
+		display:inline-block;
+		width:45%;
+		vertical-align:top;
+		margin-left:7%
+	}
+
+	.rtc-logo {
+	display:inline-block;
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+.wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+}
+
+.logo {
+        font-size: 175%;
+}
+
+nav a {
+        font-size: 100%;
+}
+
+nav li:first-child a {
+        margin-left: 2.5em;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1368px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+	.wrapper {
+        width: 1268px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+}
+
+	.rtc-logo-schreenshots {
+	margin-top:-2em;
+}
+
+.aside-top {width: 44% !important;}
+
+.article-top2 {
+		float: left;
+		width: 35% !important;
+		padding-right:7%;
+		clear:both;
+		text-align:right;
+
+}
+	.aside-top2 {
+        width: 52% !important;
+		padding-top:2.5em !important;
+}
+
+.display-schreenshots {
+	margin-top:-5em;
+	padding-left:2em;
+  }
+
+	.rtc-logo {
+	margin-right:10%;
+	}
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,284 @@
+/* Für nav teil  */
+.navbar-right {
+  float: right;
+}
+
+.bar li {
+  display: inline-block;
+  padding: 10px;
+}
+.bar li a {
+  color: #5ac8fb;
+  text-decoration: none;
+}
+
+/* Für Sim-Racing Teil */
+#setup {
+  width: 100%;
+}
+
+#setup .row .column {
+  display: inline-block;
+  vertical-align: top;
+}
+#setup .row .column {
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+#setup .row .left {
+  width: 75%;
+}
+#setup .row .right {
+  width: 25%;
+}
+
+#setup .row .left .par1 {
+  color: white;
+  text-align: justify;
+  padding: 3px 3px 0 10px;
+}
+
+.par1:first-of-type:first-letter {
+  font-family: "Open Sans", Arial, Helvetica, sans serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 0.8em;
+  display: block;
+  margin: 5px 3px 0 0px;
+  float: left;
+  padding: 3px 3px 0 2px;
+  color: #5ac8fb;
+}
+
+#setup h2 {
+  padding-left: 20px;
+}
+.column .par2 {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.column .par2 a {
+  border-radius: 0.5em;
+  background-color: rgb(52, 146, 235);
+}
+
+.column .par2 a:hover {
+  border: 0 0 10px #ddd;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.initial {
+  text-align: justify;
+}
+
+.initial-2 {
+  text-align: justify;
+}
+
+/* For partners logo */
+
+/* Slider */
+.container {
+  background-color: black;
+}
+
+.container p {
+  text-align: center;
+  color: white;
+}
+
+section .partner {
+  background-color: black;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+
+
+/* SIMULATION */
+
+.assetto_card{
+  padding-top: 200px;
+}
+.card {
+  border: 1px solid var(--color-three);
+  margin-bottom: 20px;
+  transition: border 0.1s, transform 0.3s;
+}
+
+.card:hover {
+  border: 1px solid var(--color-two);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.card img:hover {
+  opacity: 0.8;
+}
+
+
+/* ASSETTO CORSA*/
+.assetto{
+  padding-top: 200px;
+}
+
+.dropdown {
+  left: 37%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100px;
+  background-color: #0abf53;
+}
+
+.dropdown li {
+  position: relative;
+}
+
+.dropdown li a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown li ul {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  line-height: normal;
+  background-color: #333;
+}
+
+.dropdown li ul li a {
+  text-align: left;
+  color: #cccccc;
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown li ul li a:hover {
+  background-color: #0abf53;
+  color: #ffffff;
+}
+
+.dropdown li ul li ul {
+  left: 100%;
+  top: 0;
+}
+
+ul li:hover>a {
+  background-color: #0abf53;
+  color: #ffffff !important;
+}
+
+ul li:hover>ul {
+  display: block;
+}
